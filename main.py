@@ -16,4 +16,4 @@ def place_order(e):
        display(f"Subtotal: {total}", target="output1") 
        display(f"VAT: {VAT}", target="output1") 
        display(f"Total: {SuperTotal}", target="output1") 
-       display(f"Please come back again!", target="output1") 
+       display(f"Please come back again!(with more money.)", target="output1") 

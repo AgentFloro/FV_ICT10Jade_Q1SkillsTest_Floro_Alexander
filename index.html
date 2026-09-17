@@ -7,21 +7,57 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
     <style>
-        
+        header{
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            
+            text-align: center;
+            font-size: 30px;
+        }
+        form{
+            border-radius: 50px;
+            background-color: rgb(218, 79, 79);
+            color:rgb(207, 219, 230);
+            text-align: center;
+    
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            height: 240px;
+            
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://img.magnific.com/free-photo/wooden-planks-with-blurred-restaurant-background_1253-56.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .output1{
+            border-radius: 50px;
+            background-color: rgb(218, 79, 79);
+            color:rgb(207, 219, 230);
+            text-align: center;
+        }
+
     </style>
+
 </head>
 <body>
     <header>
         <h1>
             Mastard Shack
         </h1>
-      
+      <h2>Menu & Order</h2>
     </header>
 
-    <h2>Menu</h2>
+    
 
 
     <form>
+    <br>
         <label for="options">Select main course</label>
        <br>
        <select id="Main">
@@ -30,7 +66,7 @@
         <option value="200">Club Sandwich</option>
         <option value="300">baby steak</option>
        </select>
-       <br>
+       <br><br>
        <label for="options">Select your Appetizers</label>
        <br>
        <select id="Appetize">
@@ -39,7 +75,7 @@
         <option value="100">Calamari</option>
         <option value="75">MozzarelaSticks</option>
        </select>
-       <br>
+       <br><br>
        <label for="options">Select your drink</label>
        <br>
        <select id="Drink">
@@ -49,10 +85,11 @@
         <option value="45">Lemonade</option>
         <option value="75">milkshake</option>
        </select>
-       <br>
+       <br><br><br>
        <button type="button" py-click="place_order">Place order</button>
     </form>
-    <div id="output1"></div>
+    <br>
+    <div id="output1" class="output1"></div>
     <script type="py" src="main.py"></script>
 </body>
 </html>
