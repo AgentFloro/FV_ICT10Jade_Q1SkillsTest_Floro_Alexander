@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Mastard Shack
+        </h1>
+    </header>
+
+    <h2>Menu</h2>
+
+
+    <form>
+        <label for="options">Select main course</label>
+       <br>
+       <select id="Main">
+        <option value="0">Choose an option</option>
+        <option value="100">Pasta</option>
+        <option value="200">Club Sandwich</option>
+        <option value="300">baby steak</option>
+       </select>
+       <br>
+       <button type="button" py-click="place_order">Place order</button>
+    </form>
+    <div id="output1"></div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
